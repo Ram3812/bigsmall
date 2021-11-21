@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="40" passed="39" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-11-21T00:40:19 IST" name="Suite" finished-at="2021-11-21T00:44:30 IST" duration-ms="250472">
+    <groups>
+    </groups>
+    <test started-at="2021-11-21T00:40:19 IST" name="TC001" finished-at="2021-11-21T00:40:43 IST" duration-ms="23508">
+      <class name="com.mindtree.runner.TC001_PlaceAOrder_CorporateGift">
+        <test-method is-config="true" signature="initDriver()[pri:0, instance:com.mindtree.runner.TC001_PlaceAOrder_CorporateGift@2d96543c]" started-at="2021-11-21T00:40:19 IST" name="initDriver" finished-at="2021-11-21T00:40:23 IST" duration-ms="3199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method signature="openUrl()[pri:0, instance:com.mindtree.runner.TC001_PlaceAOrder_CorporateGift@2d96543c]" started-at="2021-11-21T00:40:23 IST" name="openUrl" finished-at="2021-11-21T00:40:28 IST" duration-ms="5661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUrl -->
+        <test-method signature="placeOrder_CorporateGift(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.mindtree.runner.TC001_PlaceAOrder_CorporateGift@2d96543c]" started-at="2021-11-21T00:40:30 IST" name="placeOrder_CorporateGift" data-provider="getInfo" finished-at="2021-11-21T00:40:35 IST" depends-on-methods="com.mindtree.runner.TC001_PlaceAOrder_CorporateGift.openUrl" duration-ms="5608" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sri Ram]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sdet.ram@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[9502237082]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Dummy text]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeOrder_CorporateGift -->
+        <test-method signature="verify_placedOrder()[pri:0, instance:com.mindtree.runner.TC001_PlaceAOrder_CorporateGift@2d96543c]" started-at="2021-11-21T00:40:35 IST" name="verify_placedOrder" finished-at="2021-11-21T00:40:42 IST" depends-on-methods="com.mindtree.runner.TC001_PlaceAOrder_CorporateGift.placeOrder_CorporateGift" duration-ms="7080" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"p.note.form-success"}
+  (Session info: chrome=96.0.4664.45)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BRIAN', ip: '192.168.29.160', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Ram\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:56575}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0621e39f65270081077a461f4a74ae29
+*** Element info: {Using=css selector, value=p.note.form-success}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"p.note.form-success"}
+  (Session info: chrome=96.0.4664.45)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BRIAN', ip: '192.168.29.160', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Ram\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:56575}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0621e39f65270081077a461f4a74ae29
+*** Element info: {Using=css selector, value=p.note.form-success}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.mindtree.pageObjects.CorporateGiftsPage.getSuccessMsg(CorporateGiftsPage.java:36)
+at com.mindtree.runner.TC001_PlaceAOrder_CorporateGift.verify_placedOrder(TC001_PlaceAOrder_CorporateGift.java:58)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_placedOrder -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.mindtree.runner.TC001_PlaceAOrder_CorporateGift@2d96543c]" started-at="2021-11-21T00:40:42 IST" name="endTest" finished-at="2021-11-21T00:40:43 IST" duration-ms="394" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.mindtree.runner.TC001_PlaceAOrder_CorporateGift -->
+    </test> <!-- TC001 -->
+    <test started-at="2021-11-21T00:40:43 IST" name="TC002" finished-at="2021-11-21T00:41:02 IST" duration-ms="19631">
+      <class name="com.mindtree.runner.TC002_PlaceAOrder_PersonalisedGift">
+        <test-method is-config="true" signature="initDriver()[pri:0, instance:com.mindtree.runner.TC002_PlaceAOrder_PersonalisedGift@1f6c9cd8]" started-at="2021-11-21T00:40:43 IST" name="initDriver" finished-at="2021-11-21T00:40:44 IST" duration-ms="1356" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method signature="openUrl()[pri:0, instance:com.mindtree.runner.TC002_PlaceAOrder_PersonalisedGift@1f6c9cd8]" started-at="2021-11-21T00:40:44 IST" name="openUrl" finished-at="2021-11-21T00:40:50 IST" duration-ms="5358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUrl -->
+        <test-method signature="selectGift_PersonalizedGift()[pri:0, instance:com.mindtree.runner.TC002_PlaceAOrder_PersonalisedGift@1f6c9cd8]" started-at="2021-11-21T00:40:50 IST" name="selectGift_PersonalizedGift" finished-at="2021-11-21T00:40:58 IST" depends-on-methods="com.mindtree.runner.TC002_PlaceAOrder_PersonalisedGift.openUrl" duration-ms="8556" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectGift_PersonalizedGift -->
+        <test-method signature="placeOrder_PersonalizedGift()[pri:0, instance:com.mindtree.runner.TC002_PlaceAOrder_PersonalisedGift@1f6c9cd8]" started-at="2021-11-21T00:40:58 IST" name="placeOrder_PersonalizedGift" finished-at="2021-11-21T00:41:02 IST" depends-on-methods="com.mindtree.runner.TC002_PlaceAOrder_PersonalisedGift.selectGift_PersonalizedGift" duration-ms="4052" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeOrder_PersonalizedGift -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.mindtree.runner.TC002_PlaceAOrder_PersonalisedGift@1f6c9cd8]" started-at="2021-11-21T00:41:02 IST" name="endTest" finished-at="2021-11-21T00:41:02 IST" duration-ms="306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.mindtree.runner.TC002_PlaceAOrder_PersonalisedGift -->
+    </test> <!-- TC002 -->
+    <test started-at="2021-11-21T00:41:02 IST" name="TC003" finished-at="2021-11-21T00:41:23 IST" duration-ms="20952">
+      <class name="com.mindtree.runner.TC003_PlaceAOrder_BirthdayGift">
+        <test-method is-config="true" signature="initDriver()[pri:0, instance:com.mindtree.runner.TC003_PlaceAOrder_BirthdayGift@c5dc4a2]" started-at="2021-11-21T00:41:02 IST" name="initDriver" finished-at="2021-11-21T00:41:04 IST" duration-ms="1647" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method signature="openUrl()[pri:0, instance:com.mindtree.runner.TC003_PlaceAOrder_BirthdayGift@c5dc4a2]" started-at="2021-11-21T00:41:04 IST" name="openUrl" finished-at="2021-11-21T00:41:10 IST" duration-ms="6128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUrl -->
+        <test-method signature="selectGiftCateg_BirthdayGift()[pri:0, instance:com.mindtree.runner.TC003_PlaceAOrder_BirthdayGift@c5dc4a2]" started-at="2021-11-21T00:41:10 IST" name="selectGiftCateg_BirthdayGift" finished-at="2021-11-21T00:41:15 IST" depends-on-methods="com.mindtree.runner.TC003_PlaceAOrder_BirthdayGift.openUrl" duration-ms="4767" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectGiftCateg_BirthdayGift -->
+        <test-method signature="selectGift_Birthdaygift()[pri:0, instance:com.mindtree.runner.TC003_PlaceAOrder_BirthdayGift@c5dc4a2]" started-at="2021-11-21T00:41:15 IST" name="selectGift_Birthdaygift" finished-at="2021-11-21T00:41:18 IST" depends-on-methods="com.mindtree.runner.TC003_PlaceAOrder_BirthdayGift.selectGiftCateg_BirthdayGift" duration-ms="2982" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectGift_Birthdaygift -->
+        <test-method signature="placeOrder_Birthdaygift()[pri:0, instance:com.mindtree.runner.TC003_PlaceAOrder_BirthdayGift@c5dc4a2]" started-at="2021-11-21T00:41:18 IST" name="placeOrder_Birthdaygift" finished-at="2021-11-21T00:41:19 IST" depends-on-methods="com.mindtree.runner.TC003_PlaceAOrder_BirthdayGift.selectGift_Birthdaygift" duration-ms="534" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeOrder_Birthdaygift -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.mindtree.runner.TC003_PlaceAOrder_BirthdayGift@c5dc4a2]" started-at="2021-11-21T00:41:19 IST" name="endTest" finished-at="2021-11-21T00:41:23 IST" duration-ms="4890" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.mindtree.runner.TC003_PlaceAOrder_BirthdayGift -->
+    </test> <!-- TC003 -->
+    <test started-at="2021-11-21T00:41:23 IST" name="TC004" finished-at="2021-11-21T00:41:44 IST" duration-ms="20355">
+      <class name="com.mindtree.runner.TC004_PlaceAOrder_SearchAProduct">
+        <test-method is-config="true" signature="initDriver()[pri:0, instance:com.mindtree.runner.TC004_PlaceAOrder_SearchAProduct@5a9d6f02]" started-at="2021-11-21T00:41:23 IST" name="initDriver" finished-at="2021-11-21T00:41:25 IST" duration-ms="1655" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method signature="openUrl()[pri:0, instance:com.mindtree.runner.TC004_PlaceAOrder_SearchAProduct@5a9d6f02]" started-at="2021-11-21T00:41:25 IST" name="openUrl" finished-at="2021-11-21T00:41:31 IST" duration-ms="6338" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUrl -->
+        <test-method signature="searchAGift()[pri:0, instance:com.mindtree.runner.TC004_PlaceAOrder_SearchAProduct@5a9d6f02]" started-at="2021-11-21T00:41:31 IST" name="searchAGift" finished-at="2021-11-21T00:41:34 IST" depends-on-methods="com.mindtree.runner.TC004_PlaceAOrder_SearchAProduct.openUrl" duration-ms="2928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchAGift -->
+        <test-method signature="selecttheGift()[pri:0, instance:com.mindtree.runner.TC004_PlaceAOrder_SearchAProduct@5a9d6f02]" started-at="2021-11-21T00:41:34 IST" name="selecttheGift" finished-at="2021-11-21T00:41:38 IST" depends-on-methods="com.mindtree.runner.TC004_PlaceAOrder_SearchAProduct.searchAGift" duration-ms="3447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selecttheGift -->
+        <test-method signature="addGiftToCart()[pri:0, instance:com.mindtree.runner.TC004_PlaceAOrder_SearchAProduct@5a9d6f02]" started-at="2021-11-21T00:41:38 IST" name="addGiftToCart" finished-at="2021-11-21T00:41:38 IST" depends-on-methods="com.mindtree.runner.TC004_PlaceAOrder_SearchAProduct.selecttheGift" duration-ms="502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addGiftToCart -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.mindtree.runner.TC004_PlaceAOrder_SearchAProduct@5a9d6f02]" started-at="2021-11-21T00:41:38 IST" name="endTest" finished-at="2021-11-21T00:41:44 IST" duration-ms="5480" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.mindtree.runner.TC004_PlaceAOrder_SearchAProduct -->
+    </test> <!-- TC004 -->
+    <test started-at="2021-11-21T00:41:44 IST" name="TC005" finished-at="2021-11-21T00:42:09 IST" duration-ms="25570">
+      <class name="com.mindtree.runner.TC001_WishList_AddToWishList">
+        <test-method is-config="true" signature="initDriver()[pri:0, instance:com.mindtree.runner.TC001_WishList_AddToWishList@241e8ea6]" started-at="2021-11-21T00:41:44 IST" name="initDriver" finished-at="2021-11-21T00:41:45 IST" duration-ms="1167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method signature="openUrl()[pri:0, instance:com.mindtree.runner.TC001_WishList_AddToWishList@241e8ea6]" started-at="2021-11-21T00:41:45 IST" name="openUrl" finished-at="2021-11-21T00:41:52 IST" duration-ms="7197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUrl -->
+        <test-method signature="searchAGift()[pri:0, instance:com.mindtree.runner.TC001_WishList_AddToWishList@241e8ea6]" started-at="2021-11-21T00:41:52 IST" name="searchAGift" finished-at="2021-11-21T00:41:57 IST" depends-on-methods="com.mindtree.runner.TC001_WishList_AddToWishList.openUrl" duration-ms="4746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchAGift -->
+        <test-method signature="selecttheGift()[pri:0, instance:com.mindtree.runner.TC001_WishList_AddToWishList@241e8ea6]" started-at="2021-11-21T00:41:57 IST" name="selecttheGift" finished-at="2021-11-21T00:42:00 IST" depends-on-methods="com.mindtree.runner.TC001_WishList_AddToWishList.searchAGift" duration-ms="2716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selecttheGift -->
+        <test-method signature="addGiftToWishlist()[pri:0, instance:com.mindtree.runner.TC001_WishList_AddToWishList@241e8ea6]" started-at="2021-11-21T00:42:00 IST" name="addGiftToWishlist" finished-at="2021-11-21T00:42:01 IST" depends-on-methods="com.mindtree.runner.TC001_WishList_AddToWishList.selecttheGift" duration-ms="964" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addGiftToWishlist -->
+        <test-method signature="validateWishList()[pri:0, instance:com.mindtree.runner.TC001_WishList_AddToWishList@241e8ea6]" started-at="2021-11-21T00:42:01 IST" name="validateWishList" finished-at="2021-11-21T00:42:05 IST" depends-on-methods="com.mindtree.runner.TC001_WishList_AddToWishList.addGiftToWishlist" duration-ms="4265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateWishList -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.mindtree.runner.TC001_WishList_AddToWishList@241e8ea6]" started-at="2021-11-21T00:42:05 IST" name="endTest" finished-at="2021-11-21T00:42:09 IST" duration-ms="4510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.mindtree.runner.TC001_WishList_AddToWishList -->
+    </test> <!-- TC005 -->
+    <test started-at="2021-11-21T00:42:09 IST" name="TC006" finished-at="2021-11-21T00:42:32 IST" duration-ms="22909">
+      <class name="com.mindtree.runner.TC002_WishList_RemoveFromWishList">
+        <test-method is-config="true" signature="initDriver()[pri:0, instance:com.mindtree.runner.TC002_WishList_RemoveFromWishList@35d08e6c]" started-at="2021-11-21T00:42:09 IST" name="initDriver" finished-at="2021-11-21T00:42:12 IST" duration-ms="2753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method signature="openUrl()[pri:0, instance:com.mindtree.runner.TC002_WishList_RemoveFromWishList@35d08e6c]" started-at="2021-11-21T00:42:12 IST" name="openUrl" finished-at="2021-11-21T00:42:19 IST" duration-ms="7237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUrl -->
+        <test-method signature="searchAGift()[pri:0, instance:com.mindtree.runner.TC002_WishList_RemoveFromWishList@35d08e6c]" started-at="2021-11-21T00:42:19 IST" name="searchAGift" finished-at="2021-11-21T00:42:23 IST" depends-on-methods="com.mindtree.runner.TC002_WishList_RemoveFromWishList.openUrl" duration-ms="3271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchAGift -->
+        <test-method signature="selecttheGift()[pri:0, instance:com.mindtree.runner.TC002_WishList_RemoveFromWishList@35d08e6c]" started-at="2021-11-21T00:42:23 IST" name="selecttheGift" finished-at="2021-11-21T00:42:27 IST" depends-on-methods="com.mindtree.runner.TC002_WishList_RemoveFromWishList.searchAGift" duration-ms="3941" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selecttheGift -->
+        <test-method signature="addGiftToWishlist()[pri:0, instance:com.mindtree.runner.TC002_WishList_RemoveFromWishList@35d08e6c]" started-at="2021-11-21T00:42:27 IST" name="addGiftToWishlist" finished-at="2021-11-21T00:42:27 IST" depends-on-methods="com.mindtree.runner.TC002_WishList_RemoveFromWishList.selecttheGift" duration-ms="660" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addGiftToWishlist -->
+        <test-method signature="removeGiftFromWishlist()[pri:0, instance:com.mindtree.runner.TC002_WishList_RemoveFromWishList@35d08e6c]" started-at="2021-11-21T00:42:27 IST" name="removeGiftFromWishlist" finished-at="2021-11-21T00:42:32 IST" depends-on-methods="com.mindtree.runner.TC002_WishList_RemoveFromWishList.addGiftToWishlist" duration-ms="4340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeGiftFromWishlist -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.mindtree.runner.TC002_WishList_RemoveFromWishList@35d08e6c]" started-at="2021-11-21T00:42:32 IST" name="endTest" finished-at="2021-11-21T00:42:32 IST" duration-ms="702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.mindtree.runner.TC002_WishList_RemoveFromWishList -->
+    </test> <!-- TC006 -->
+    <test started-at="2021-11-21T00:42:32 IST" name="TC007" finished-at="2021-11-21T00:43:01 IST" duration-ms="28900">
+      <class name="com.mindtree.runner.TC003_WishList_AddToCartFromWishList">
+        <test-method is-config="true" signature="initDriver()[pri:0, instance:com.mindtree.runner.TC003_WishList_AddToCartFromWishList@61f05988]" started-at="2021-11-21T00:42:32 IST" name="initDriver" finished-at="2021-11-21T00:42:34 IST" duration-ms="2210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method signature="openUrl()[pri:0, instance:com.mindtree.runner.TC003_WishList_AddToCartFromWishList@61f05988]" started-at="2021-11-21T00:42:34 IST" name="openUrl" finished-at="2021-11-21T00:42:43 IST" duration-ms="8423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUrl -->
+        <test-method signature="searchAGift()[pri:0, instance:com.mindtree.runner.TC003_WishList_AddToCartFromWishList@61f05988]" started-at="2021-11-21T00:42:43 IST" name="searchAGift" finished-at="2021-11-21T00:42:46 IST" depends-on-methods="com.mindtree.runner.TC003_WishList_AddToCartFromWishList.openUrl" duration-ms="3349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchAGift -->
+        <test-method signature="selecttheGift()[pri:0, instance:com.mindtree.runner.TC003_WishList_AddToCartFromWishList@61f05988]" started-at="2021-11-21T00:42:46 IST" name="selecttheGift" finished-at="2021-11-21T00:42:49 IST" depends-on-methods="com.mindtree.runner.TC003_WishList_AddToCartFromWishList.searchAGift" duration-ms="2659" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selecttheGift -->
+        <test-method signature="addGiftToWishlist()[pri:0, instance:com.mindtree.runner.TC003_WishList_AddToCartFromWishList@61f05988]" started-at="2021-11-21T00:42:49 IST" name="addGiftToWishlist" finished-at="2021-11-21T00:42:50 IST" depends-on-methods="com.mindtree.runner.TC003_WishList_AddToCartFromWishList.selecttheGift" duration-ms="772" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addGiftToWishlist -->
+        <test-method signature="addToCartFromWishlist()[pri:0, instance:com.mindtree.runner.TC003_WishList_AddToCartFromWishList@61f05988]" started-at="2021-11-21T00:42:50 IST" name="addToCartFromWishlist" finished-at="2021-11-21T00:42:56 IST" depends-on-methods="com.mindtree.runner.TC003_WishList_AddToCartFromWishList.addGiftToWishlist" duration-ms="6627" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartFromWishlist -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.mindtree.runner.TC003_WishList_AddToCartFromWishList@61f05988]" started-at="2021-11-21T00:42:56 IST" name="endTest" finished-at="2021-11-21T00:43:01 IST" duration-ms="4857" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.mindtree.runner.TC003_WishList_AddToCartFromWishList -->
+    </test> <!-- TC007 -->
+    <test started-at="2021-11-21T00:43:01 IST" name="TC008" finished-at="2021-11-21T00:43:53 IST" duration-ms="51813">
+      <class name="com.mindtree.runner.TC001_Cart_CheckOut">
+        <test-method is-config="true" signature="initDriver()[pri:0, instance:com.mindtree.runner.TC001_Cart_CheckOut@39a8312f]" started-at="2021-11-21T00:43:01 IST" name="initDriver" finished-at="2021-11-21T00:43:02 IST" duration-ms="1238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method signature="openUrl()[pri:0, instance:com.mindtree.runner.TC001_Cart_CheckOut@39a8312f]" started-at="2021-11-21T00:43:02 IST" name="openUrl" finished-at="2021-11-21T00:43:09 IST" duration-ms="6310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUrl -->
+        <test-method signature="selectGift()[pri:0, instance:com.mindtree.runner.TC001_Cart_CheckOut@39a8312f]" started-at="2021-11-21T00:43:09 IST" name="selectGift" finished-at="2021-11-21T00:43:15 IST" depends-on-methods="com.mindtree.runner.TC001_Cart_CheckOut.openUrl" duration-ms="6562" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectGift -->
+        <test-method signature="addGiftToCart()[pri:0, instance:com.mindtree.runner.TC001_Cart_CheckOut@39a8312f]" started-at="2021-11-21T00:43:15 IST" name="addGiftToCart" finished-at="2021-11-21T00:43:16 IST" depends-on-methods="com.mindtree.runner.TC001_Cart_CheckOut.selectGift" duration-ms="568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addGiftToCart -->
+        <test-method signature="clickOnCheckOut()[pri:0, instance:com.mindtree.runner.TC001_Cart_CheckOut@39a8312f]" started-at="2021-11-21T00:43:16 IST" name="clickOnCheckOut" finished-at="2021-11-21T00:43:18 IST" depends-on-methods="com.mindtree.runner.TC001_Cart_CheckOut.addGiftToCart" duration-ms="2027" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnCheckOut -->
+        <test-method signature="fillInfo()[pri:0, instance:com.mindtree.runner.TC001_Cart_CheckOut@39a8312f]" started-at="2021-11-21T00:43:18 IST" name="fillInfo" finished-at="2021-11-21T00:43:37 IST" depends-on-methods="com.mindtree.runner.TC001_Cart_CheckOut.clickOnCheckOut" duration-ms="19016" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillInfo -->
+        <test-method signature="chooseShippingPay()[pri:0, instance:com.mindtree.runner.TC001_Cart_CheckOut@39a8312f]" started-at="2021-11-21T00:43:37 IST" name="chooseShippingPay" finished-at="2021-11-21T00:43:48 IST" depends-on-methods="com.mindtree.runner.TC001_Cart_CheckOut.fillInfo" duration-ms="11450" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chooseShippingPay -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.mindtree.runner.TC001_Cart_CheckOut@39a8312f]" started-at="2021-11-21T00:43:48 IST" name="endTest" finished-at="2021-11-21T00:43:53 IST" duration-ms="4638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.mindtree.runner.TC001_Cart_CheckOut -->
+    </test> <!-- TC008 -->
+    <test started-at="2021-11-21T00:43:53 IST" name="TC009" finished-at="2021-11-21T00:44:18 IST" duration-ms="25179">
+      <class name="com.mindtree.runner.TC002_Cart_RemoveFromCart">
+        <test-method is-config="true" signature="initDriver()[pri:0, instance:com.mindtree.runner.TC002_Cart_RemoveFromCart@54c62d71]" started-at="2021-11-21T00:43:53 IST" name="initDriver" finished-at="2021-11-21T00:43:56 IST" duration-ms="2606" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method signature="openUrl()[pri:0, instance:com.mindtree.runner.TC002_Cart_RemoveFromCart@54c62d71]" started-at="2021-11-21T00:43:56 IST" name="openUrl" finished-at="2021-11-21T00:44:02 IST" duration-ms="6473" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUrl -->
+        <test-method signature="selectGiftAddToCart()[pri:0, instance:com.mindtree.runner.TC002_Cart_RemoveFromCart@54c62d71]" started-at="2021-11-21T00:44:02 IST" name="selectGiftAddToCart" finished-at="2021-11-21T00:44:11 IST" depends-on-methods="com.mindtree.runner.TC002_Cart_RemoveFromCart.openUrl" duration-ms="8876" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectGiftAddToCart -->
+        <test-method signature="removeGift()[pri:0, instance:com.mindtree.runner.TC002_Cart_RemoveFromCart@54c62d71]" started-at="2021-11-21T00:44:11 IST" name="removeGift" finished-at="2021-11-21T00:44:14 IST" depends-on-methods="com.mindtree.runner.TC002_Cart_RemoveFromCart.selectGiftAddToCart" duration-ms="2732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeGift -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.mindtree.runner.TC002_Cart_RemoveFromCart@54c62d71]" started-at="2021-11-21T00:44:14 IST" name="endTest" finished-at="2021-11-21T00:44:18 IST" duration-ms="4488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.mindtree.runner.TC002_Cart_RemoveFromCart -->
+    </test> <!-- TC009 -->
+    <test started-at="2021-11-21T00:44:18 IST" name="TC010" finished-at="2021-11-21T00:44:30 IST" duration-ms="11583">
+      <class name="com.mindtree.runner.TC001_GiftCard_BuyGiftCard">
+        <test-method is-config="true" signature="initDriver()[pri:0, instance:com.mindtree.runner.TC001_GiftCard_BuyGiftCard@2dd80673]" started-at="2021-11-21T00:44:18 IST" name="initDriver" finished-at="2021-11-21T00:44:19 IST" duration-ms="1207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method signature="openUrl()[pri:0, instance:com.mindtree.runner.TC001_GiftCard_BuyGiftCard@2dd80673]" started-at="2021-11-21T00:44:19 IST" name="openUrl" finished-at="2021-11-21T00:44:27 IST" duration-ms="7303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUrl -->
+        <test-method signature="selectGiftCard()[pri:0, instance:com.mindtree.runner.TC001_GiftCard_BuyGiftCard@2dd80673]" started-at="2021-11-21T00:44:27 IST" name="selectGiftCard" finished-at="2021-11-21T00:44:30 IST" depends-on-methods="com.mindtree.runner.TC001_GiftCard_BuyGiftCard.openUrl" duration-ms="2861" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectGiftCard -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.mindtree.runner.TC001_GiftCard_BuyGiftCard@2dd80673]" started-at="2021-11-21T00:44:30 IST" name="endTest" finished-at="2021-11-21T00:44:30 IST" duration-ms="210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.mindtree.runner.TC001_GiftCard_BuyGiftCard -->
+    </test> <!-- TC010 -->
+  </suite> <!-- Suite -->
+</testng-results>

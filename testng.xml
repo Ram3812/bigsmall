@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="com.mindtree.utilities.ExtentReport"></listener>
+		<listener class-name="com.mindtree.utilities.Listeners"></listener>
+	</listeners>
+
+	<test thread-count="5" name="TC001">
+		<classes>
+			<class
+				name="com.mindtree.runner.TC001_PlaceAOrder_CorporateGift" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="TC002">
+		<classes>
+			<class
+				name="com.mindtree.runner.TC002_PlaceAOrder_PersonalisedGift" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="TC003">
+		<classes>
+			<class
+				name="com.mindtree.runner.TC003_PlaceAOrder_BirthdayGift" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="TC004">
+		<classes>
+			<class
+				name="com.mindtree.runner.TC004_PlaceAOrder_SearchAProduct" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="TC005">
+		<classes>
+			<class name="com.mindtree.runner.TC001_WishList_AddToWishList" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="TC006">
+		<classes>
+			<class
+				name="com.mindtree.runner.TC002_WishList_RemoveFromWishList" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="TC007">
+		<classes>
+			<class
+				name="com.mindtree.runner.TC003_WishList_AddToCartFromWishList" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="TC008">
+		<classes>
+			<class name="com.mindtree.runner.TC001_Cart_CheckOut" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="TC009">
+		<classes>
+			<class name="com.mindtree.runner.TC002_Cart_RemoveFromCart" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="TC010">
+		<classes>
+			<class name="com.mindtree.runner.TC001_GiftCard_BuyGiftCard" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

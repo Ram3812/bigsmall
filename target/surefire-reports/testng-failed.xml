@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.mindtree.utilities.ExtentReport"/>
+    <listener class-name="com.mindtree.utilities.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="TC001(failed)" verbose="0">
+    <classes>
+      <class name="com.mindtree.runner.TC001_PlaceAOrder_CorporateGift">
+        <methods>
+          <include name="placeOrder_CorporateGift"/>
+          <include name="openUrl"/>
+          <include name="initDriver"/>
+          <include name="endTest"/>
+          <include name="verify_placedOrder"/>
+        </methods>
+      </class> <!-- com.mindtree.runner.TC001_PlaceAOrder_CorporateGift -->
+    </classes>
+  </test> <!-- TC001(failed) -->
+</suite> <!-- Failed suite [Suite] -->
